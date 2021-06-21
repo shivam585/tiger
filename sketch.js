@@ -155,7 +155,7 @@ function draw() {
   
  
   //stop trex from falling down
-  trex.collide(invisibleGround);
+  trex.collide(ground);
   
   
   
