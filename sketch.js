@@ -43,9 +43,7 @@ backimage=loadImage("forestback.jpg")
 function setup() {
   createCanvas(windowWidth,windowHeight);
   
- back=createSprite(width/2,height/2,1000000,100000);
-back.addImage(backimage)
-back.scale =50;
+ 
   
   trex = createSprite(50,180,20,50);
   trex.addAnimation("running", trex_running);
@@ -84,7 +82,7 @@ back.scale =50;
 
 function draw() {
   
-  background(180);
+  background("lightblue");
   //displaying score
  
   
