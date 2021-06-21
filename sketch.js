@@ -66,7 +66,7 @@ back.scale = (width,height);
   gameOver.scale =1.8;
   restart.scale = 0.5;
   
-  invisibleGround = createSprite(width/2,height-10,700,50);
+  invisibleGround = createSprite(width/2,height-10,width,height);
   invisibleGround.visible = false;
   
   //create Obstacle and Cloud Groups
@@ -155,7 +155,7 @@ function draw() {
   
  
   //stop trex from falling down
-  trex.collide(ground);
+  trex.collide(invisibleGround );
   
   
   
